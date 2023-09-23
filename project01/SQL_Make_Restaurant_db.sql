@@ -39,15 +39,16 @@ create table customers(
 create table countrys(
   country_id int,
   country_name text,
-  country_city text
+  country_city text,
+  menu_name text
 );
   insert into countrys values
-  (101, "Argentina", "Buenos Aires"),
-  (102, "England", "Manchester"),
-  (103, "Thailand", "Bangkok"),
-  (104, "Vietnam", "Da nang"),
-  (105, "Japan", "Osaka"),
-  (106, "Italy", "Rome");
+  (101, "Argentina", "Buenos Aires", "Fried rice"),
+  (102, "England", "Manchester", "Cabonara Spaghetti"),
+  (103, "Thailand", "Bangkok", "Tom yum"),
+  (104, "Vietnam", "Da nang", "Pad Thai"),
+  (105, "Japan", "Osaka", "Spicy Spaghetti"),
+  (106, "Italy", "Rome", "Cabonara Spaghetti");
 
 --Table 4 = invoices
 create table invoices(
@@ -64,7 +65,7 @@ insert into invoices values
 
 -- Table 5 ingredients
 create table ingredients(
-  customer_id int,
+  menu_id int,
   ingredient_name text,
   ingredient_type text,
   ingredient_qty real
@@ -145,5 +146,5 @@ AVG (ingredient_qty) as avg_in,
 SUM (ingredient_qty) as sum_in,
 MIN (ingredient_qty) as min_in,
 MAX (ingredient_qty) as max_in
-from customers as cus
-join ingredients as ing on cus.customer_id = ing.customer_id;
+from menus as m
+join ingredients as ing on m.menu_id = ing.menu_id;
