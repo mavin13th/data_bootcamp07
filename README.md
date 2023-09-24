@@ -20,5 +20,7 @@ All my data projects in the bootcamp. There are 10 sprints as follow.
 
       dataset from : https://www.kaggle.com/datasets/tawfikelmetwally/employee-dataset?resource=download
 
+    3.Power BI (Order dashboard) : file in project01
+
 Verified Badge: https://badgr.com/public/assertions/I6Du2tpMQoSGGU6oDfyzSg
   
