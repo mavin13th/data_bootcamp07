@@ -2,8 +2,12 @@
 All my data projects in the bootcamp. There are 10 sprints as follow.
 
 - Google Sheets
-- SQL
-- R programming
+- SQL : https://replit.com/@KittiPhramjorn/BootcampHomeworkSQL?v=1
+- R programming :
+  
+    chatbot pizza : https://replit.com/@KittiPhramjorn/HWRChatbot01
+    Pao ying chub game : https://replit.com/@KittiPhramjorn/HWRPaoyingchub01
+  
 - Data Transformation
 - Data Visualization
 - Essential Statistics
